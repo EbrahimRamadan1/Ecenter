@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+<body>
+    <header class="col-12 gap-md-3 gap-lg-0 px-lg-5">
+        <div class="header-logo col-12 col-md-6 col-lg-4 d-flex justify-content-md-center justify-content-lg-start">
+            <img src="./assets/imgs/header-logo.png" width="199px">
+        </div>
+
+        <div class="logo col-12 col-md-12 col-lg-4 header-elments">
+            <ul class="">
+                <li class="header_list_items"><a href="./index.html" style="color: #6f49e8;">Home</a></li>
+                <li class="header_list_items"><a href="./pages/about.html">About</a></li>
+                <li class="header_list_items"><a href="./pages/gallery.html">Gallery</a></li>
+                <li class="header_list_items"><a href="./pages/course.html">Course</a></li>
+                <li class="header_list_items"><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+            
+        </div>
+        <div class="header-elments col-12 col-md-6 col-lg-4 d-flex flex-row flex-nowrap justify-content-end align-items-center d_none">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span>|</span>
+            <button id="login">
+                <i class="fa-regular fa-user"></i>
+                <p>Login</p>
+            </button>
+            <button id="signUp">Sign Up</button>
+        </div>
+    </header>
+
+    <section class="sec1 col-12">
+        <div class="right col-12 col-lg-8">
+            <p class="col-12 paragraph1">BROWSE CATEGORIES</p>
+            <h1 class="col-12 h-sec1">Find Your Preferred<br>Courses & Improve<br>Your Skills</h1>
+            <p class="col-12 paragraph2">Build your skills with online courses, certifications and degrees<br/>from world-class universities and companies.</p>
+            <form class="col-12">
+                <div class="col-12 col-md-4 py-1 serch_sec1">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" placeholder="Search here"/>
+                </div>
+                
+                <div class="col-12 col-md-4 py-1 mt-1">
+                    <i class="fa-solid fa-border-all"></i>
+                    <select class="form-dropdown">
+                        <option value selected="selected">Categories</option>
+                        <option>Visual Design</option>
+                        <option>UI UX Design</option>
+                        <option>Programing</option>
+                        <option>Popular</option>
+                        <option>Photography</option>
+                        <option>Music & Culture</option>
+                        <option>Marketing</option>
+                        <option>Kids</option>
+                    </select>
+                </div>
+                <button class="search col-12 col-md-4 py-1 mt-1">Search</button>
+            </form>
+        </div>
+        <img class="col-12 col-lg-4" src="./assets/imgs/sec1-photo.png">
+    </section>
+
+    <section class="sec2 col-12">
+        <div class="sec2-divs col-12 col-md-6 col-lg-3">
+            <img src="./assets/imgs/sec2-img1.png" class="col-3">
+            <div class="right2 col-9">
+                    <h3 class="h-sec2 col-12">Lifetime Access</h3>
+                    <p class="p-sec2 col-12">Mauris pharetra into ultrices neque over.</p>
+            </div>
+        </div>
+        <div class="sec2-divs col-12 col-md-6 col-lg-3">
+            <img src="./assets/imgs/sec2-img2.png" class="col-3">
+            <div class="right2 col-9">
+                    <h3 class="h-sec2 col-12">Expert Mentors</h3>
+                    <p class="p-sec2 col-12">Mentors pharetra into ultrices neque over.</p>
+            </div>
+        </div>
+        <div class="sec2-divs col-12 col-md-6 col-lg-3">
+            <img src="./assets/imgs/sec2-img3.png" class="col-3">
+            <div class="right2 col-9">
+                    <h3 class="h-sec2 col-12">Official Certificate</h3>
+                    <p class="p-sec2 col-12">Official pharetra into ultrices neque over.</p>
+            </div>
+        </div>
+        <div class="sec2-divs col-12 col-md-6 col-lg-3">
+            <img src="./assets/imgs/sec2-img4.png" class="col-3">
+            <div class="right2 col-9">
+                    <h3 class="h-sec2 col-12">Offline Mode</h3>
+                    <p class="p-sec2 col-12">Offline courses into ultrices neque over.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec3 col-12">
+        <div class="left-3 col-12 col-lg-5">
+            <img src="./assets/imgs/sec3-mainImg.png" width="645px" class="col-12"/>
+            <img src="./assets/imgs/sec3-cloud1.png" id="cloud1"/>
+            <img src="assets/imgs/sec3-cloud2.png" id="cloud2"/>
+        </div>
+        <div class=" right-3 col-12 col-lg-7">
+            <p class="col-12 paragraph1">ABOUT US</p>
+            <h1 class="col-12 h-sec1">Benefits of Learning<br/>Online Courses</h1>
+            <p class="col-12 paragraph2">Leverage agile frameworks to provide a robust synopsis for<br/>high level iterative approaches to our foster strategy.</p>
+            <div class="sec3-items col-12">
+                <div class="icon" class="col-3">
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2023/01/icon1.png" width="42px">
+                </div>
+                <div class="col-9 px-4">
+                    <h3 class="h-sec2 col-12">Learn With Experts</h3>
+                    <p class="p-sec2 col-12">Podcasting operational change management inside of workflows to establish a framework.</p>
+                </div>
+            </div>
+            <div class="sec3-items col-12">
+                <div class="icon" class="col-3">
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2023/01/icon2.png" width="42px">
+                </div>
+                <div class="col-9 px-4">
+                    <h3 class="h-sec2 col-12">Flexible Learning</h3>
+                    <p class="p-sec2 col-12">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test override.</p>
+                </div>
+            </div>
+            <div class="sec3-items col-12">
+                <div class="icon" class="col-3">
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2023/01/icon3.png" width="42px">
+                </div>
+                <div class="col-9 px-4">
+                    <h3 class="h-sec2 col-12">Industrial Standard</h3>
+                    <p class="p-sec2 col-12">Phosfluorescently engage worldwide methodologies with web developer enabled technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec4 col-12">
+        <div class="center-text col-12">
+            <p class="col-12 sec4-p">CATEGORIES</p>
+            <h1 class="col-12 sec4-h1">Featured Topics By<br/>Category</h1>
+        </div>
+
+        <div class="sec4_gallery col-12">
+            <div class="sec4_card col-12 col-md-5 col-lg-3">
+                <div class="card_right col-4">
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2022/12/Trophy-Recovered-1.svg" hight="66px">
+                </div>
+                <div class="card_left col-8">
+                    <h3 class="col-12 h-sec2">Art & Design</h3>
+                    <p class="col-12 p-sec2 ">01 Course</p>
+                </div>
+            </div>
+
+            <div class="sec4_card col-12 col-md-5 col-lg-3">
+                <div class="card_right col-4"> 
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2022/12/Briefcase.svg" hight="66px">
+                </div>
+                <div class="card_left col-8">
+                    <h3 class="col-12 h-sec2">Business</h3>
+                    <p class="col-12 p-sec2 ">01 Course</p>
+                </div>
+            </div>
+
+            <div class="sec4_card col-12 col-md-5 col-lg-3">
+                <div class="card_right col-4">
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2022/12/Gear.svg" hight="66px">
+                </div>
+                <div class="card_left col-8">
+                    <h3 class="col-12 h-sec2">IT & Software</h3>
+                    <p class="col-12 p-sec2 ">01 Course</p>
+                </div>
+            </div>
+
+            <div class="sec4_card col-12 col-md-5 col-lg-3">
+                <div class="card_right col-4">
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2022/12/Megaphone.svg" hight="66px">
+                </div>
+                <div class="card_left col-8">
+                    <h3 class="col-12 h-sec2">Marketing</h3>
+                    <p class="col-12 p-sec2 ">01 Course</p>
+                </div>
+            </div>
+
+            <div class="sec4_card col-12 col-md-5 col-lg-3">
+                <div class="card_right col-4">
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2022/12/Camera.svg" hight="66px">
+                </div>
+                <div class="card_left col-8">
+                    <h3 class="col-12 h-sec2">Photography</h3>
+                    <p class="col-12 p-sec2 ">01 Course</p>
+                </div>
+            </div>
+
+            <div class="sec4_card col-12 col-md-5 col-lg-3">
+                <div class="card_right col-4">
+                    <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads/2022/12/Computer.svg" hight="66px">
+                </div>
+                <div class="card_left col-8">
+                    <h3 class="col-12 h-sec2">Programing</h3>
+                    <p class="col-12 p-sec2">03 Course</p>
+                </div>
+            </div>
+                
+        </div>
+        <div class="sec4_button col-12">
+            <button class="butttons">All Categories <i class="fa-solid fa-arrow-right px-1"></i></button>
+        </div>
+    </section>
+
+    <section class="sec5 col-12">
+        <div class="center-text col-12">
+            <p class="col-12 sec4-p">Courses</p>
+            <h1 class="col-12 sec4-h1">Top Rated Learning <br><span class="line_span">Tutorials<hr></span></h1>
+        </div>
+        
+        <div class="col-12 sec5_gallery">
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12">
+                    <img src="./assets/imgs/sec5-card1.jpg" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <i class="fa-regular fa-clock "></i>
+                    <p class="m-0">55 weeks</p>
+                    <p class="m-0"> | </p>
+                    <p class="m-0">$79.00</p>
+                </div>
+                <div class="second_fix">
+                    <i class="fa-solid fa-book-open" style="color: #7A63FA;"></i>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_left">
+                        <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads//learn-press-profile/1/0b0e9896007deb46f874e972cb86b1f3.jpeg" class="px-1" height="31px">
+                        <p class="p-sec2 p-1">Ecenter</p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-user-group p-2"></i>
+                        <p class="p-sec2 p-1">76 students</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <div class="col-6 rate_card">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="p-sec2 ">(0) Review</p>
+                    </div>
+                    <p class="col-6 p-sec2 px-5">Beginner</p>   
+                    <h3 class="col-12  h-sec2 h_cards">Make Nice Presentation on Marketing Strategy</h3>                     
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12">
+                    <img src="./assets/imgs/sec5-c2.jpg" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <i class="fa-regular fa-clock "></i>
+                    <p class="m-0">10 weeks</p>
+                    <p class="m-0"> | </p>
+                    <p class="m-0">$52.00</p>
+                </div>
+                <div class="second_fix">
+                    <i class="fa-solid fa-book-open" style="color: #7A63FA;"></i>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_left">
+                        <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads//learn-press-profile/1/0b0e9896007deb46f874e972cb86b1f3.jpeg" class="px-1" height="31px">
+                        <p class="p-sec2 p-1">Ecenter</p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-user-group p-2"></i>
+                        <p class="p-sec2 p-1">45 students</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <div class="col-6 rate_card">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="p-sec2 ">(0) Review</p>
+                    </div>
+                    <p class="col-6 p-sec2 px-5">Beginner</p>   
+                    <h3 class="col-12  h-sec2 h_cards">Project Management Path for IT Professionals</h3>                     
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12">
+                    <img src="./assets/imgs/sec5-c3.jpg" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <i class="fa-regular fa-clock "></i>
+                    <p class="m-0">17 weeks</p>
+                    <p class="m-0"> | </p>
+                    <p class="m-0">$35.00</p>
+                </div>
+                <div class="second_fix">
+                    <i class="fa-solid fa-book-open" style="color: #7A63FA;"></i>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_left">
+                        <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads//learn-press-profile/1/0b0e9896007deb46f874e972cb86b1f3.jpeg" class="px-1" height="31px">
+                        <p class="p-sec2 p-1">Ecenter</p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-user-group p-2"></i>
+                        <p class="p-sec2 p-1">35 students</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <div class="col-6 rate_card">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="p-sec2 ">(0) Review</p>
+                    </div>
+                    <p class="col-6 p-sec2 px-5">Beginner</p>   
+                    <h3 class="col-12  h-sec2 h_cards">Learn Business With Proper Smart Mentorship</h3>                     
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12">
+                    <img src="./assets/imgs/sec5-c4.jpg" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <i class="fa-regular fa-clock "></i>
+                    <p class="m-0">8 weeks</p>
+                    <p class="m-0"> | </p>
+                    <p class="m-0">$455.00</p>
+                </div>
+                <div class="second_fix">
+                    <i class="fa-solid fa-book-open" style="color: #7A63FA;"></i>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_left">
+                        <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads//learn-press-profile/1/0b0e9896007deb46f874e972cb86b1f3.jpeg" class="px-1" height="31px">
+                        <p class="p-sec2 p-1">Ecenter</p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-user-group p-2"></i>
+                        <p class="p-sec2 p-1">25 students</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <div class="col-6 rate_card">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="p-sec2 ">(0) Review</p>
+                    </div>
+                    <p class="col-6 p-sec2 px-5">Beginner</p>   
+                    <h3 class="col-12  h-sec2 h_cards">Develop an Interactive Site Within Few Months.</h3>                     
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12">
+                    <img src="./assets/imgs/sec5-c5.png" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <i class="fa-regular fa-clock "></i>
+                    <p class="m-0">10 weeks</p>
+                    <p class="m-0"> | </p>
+                    <p class="m-0">Free</p>
+                </div>
+                <div class="second_fix">
+                    <i class="fa-solid fa-book-open" style="color: #7A63FA;"></i>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_left">
+                        <img src="https://rstheme.com/products/wordpress/ecenter/wp-content/uploads//learn-press-profile/1/0b0e9896007deb46f874e972cb86b1f3.jpeg" class="px-1" height="31px">
+                        <p class="p-sec2 p-1">Ecenter</p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-user-group p-2"></i>
+                        <p class="p-sec2 p-1">27 students</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <div class="col-6 rate_card">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="p-sec2 ">(0) Review</p>
+                    </div>
+                    <p class="col-6 p-sec2 px-5">All levels</p>   
+                    <h3 class="col-12  h-sec2 h_cards">Learn Advanced JavaScript Course for Free</h3>                     
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12">
+                    <img src="./assets/imgs/sec5-c6.jpg" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <i class="fa-regular fa-clock "></i>
+                    <p class="m-0">17 weeks</p>
+                    <p class="m-0"> | </p>
+                    <p class="m-0">$35.00</p>
+                </div>
+                <div class="second_fix">
+                    <i class="fa-solid fa-book-open" style="color: #7A63FA;"></i>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_left">
+                        <img src="https://secure.gravatar.com/avatar/71c54fed3fd1a2610482f2bf498e675e?s=250&d=mm&r=g" class="px-1" height="31px">
+                        <p class="p-sec2 p-1">Luyes Figery</p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-user-group p-2"></i>
+                        <p class="p-sec2 p-1">36 students</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <div class="col-6 rate_card">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p class="p-sec2 ">(0) Review</p>
+                    </div>
+                    <p class="col-6 p-sec2 px-5">Beginner</p>   
+                    <h3 class="col-12  h-sec2 h_cards">Computer Science Startup Varius Commodo</h3>                     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec6 col-12">
+        <div class="col-10 sec6_up">
+            <div class="col-12 sec6_up_left">
+                <p class="col-12 paragraph1 pb-2">Events</p>
+                <h class="col-12 h-sec1 pb-2">Upcoming <span class="line_span ">Events <hr></span></h>
+            </div>
+            <button class=" butttons col-2 d_none">All Events <i class="fa-solid fa-arrow-right px-1"></i></button>
+        </div>
+        <div class="col-12 sec6_down">
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12 card_img">
+                    <img src="./assets/imgs/sec6-c1.jpg" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <p class="m-0">11 Feb, 23</p>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-clock" style="color: #7A63FA;"></i>
+                        <p class="p-sec2 p-1">02:00 PM - 04:00 PM</p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-location-dot" style="color: #7A63FA;"></i>
+                        <p class="p-sec2 p-1"> Kentucky, USA</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <h3 class="col-12  h-sec2 h_cards">Computer Science Startup Varius Commodo.</h3> 
+                    <div class="col-12 sec6_cards_button">
+                        <button class="butttons"> Join Event <i class="fa-solid fa-arrow-right px-1"></i></button> 
+                    </div>                   
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12 card_img">
+                    <img src="./assets/imgs/sec6-c2.jpg" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <p class="m-0">06 Sep, 24</p>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-clock" style="color: #7A63FA;"></i>
+                        <p class="p-sec2 p-1">01:00 PM - 03:00 PM
+                        </p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-location-dot" style="color: #7A63FA;"></i>
+                        <p class="p-sec2 p-1"> New York, USA</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <h3 class="col-12  h-sec2 h_cards">Understanding the Wonders & beauty of Mentorship</h3> 
+                    <div class="col-12 sec6_cards_button">
+                        <button class="butttons"> Join Event <i class="fa-solid fa-arrow-right px-1"></i></button> 
+                    </div>                   
+                </div>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 sec5_cards">
+                <div class="col-12 card_img">
+                    <img src="./assets/imgs/sec6-c3.jpg" class="col-12">
+                </div>
+                <div class="first_fix">
+                    <p class="m-0">05 Aug, 25</p>
+                </div>
+                <div class="col-12 card_down">
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-clock" style="color: #7A63FA;"></i>
+                        <p class="p-sec2 p-1">10:30 AM - 12:30 AM</p>
+                    </div>
+                    <div class="col-6 under_img_right">
+                        <i class="fa-solid fa-location-dot" style="color: #7A63FA;"></i>
+                        <p class="p-sec2 p-1"> Kansas, USA</p>
+                    </div>
+                    <hr class="col-12 mt-3 mb-3">
+                    <h3 class="col-12  h-sec2 h_cards">Cyber security awareness training for the small business</h3> 
+                    <div class="col-12 sec6_cards_button">
+                        <button class="butttons"> Join Event <i class="fa-solid fa-arrow-right px-1"></i></button> 
+                    </div>                   
+                </div>
+            </div>
+        </div>
+        </di>
+    </section>
+    <section class="SEC7 col-12">
+        <div class="col-12 sec7_up">
+            <div class="col-12 col-lg-6 sec7_up_left">
+                <p class="col-12 paragraph1">JOIN US</p>
+                <h3 class="col-12 h-sec1">Courses Taught By Leaders Around The World.</h3>
+                <p class="col12 paragraph2">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
+                <div class="col-12">
+                    <button class="butttons">Apply Now</button>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 sec7_up_right d_none">
+                <div class="col-12 bground">
+                    <img src="./assets/imgs/sec7_bg_left.png" width="566px">
+                </div>
+                <img src="./assets/imgs/sec7_left.png" height="572px">
+            </div>
+        </div>
+        <div class="col-12 sec7_down">
+            <div class="col-12 col-md-5 sec7_down_left">
+                <i class="fa-solid fa-envelope-open-text col-1"></i>
+                <h4 class="col-9">Subscribe to Newsletter</h4>
+            </div>
+            <div class="col-12 col-md-5 sec7_down_right">
+                <input type="email" class="col-9" placeholder="Enter Your Email Address" required/>
+                <i class="fa-brands fa-telegram col-1"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer class="col-12">
+        <div class="col-12 col-md-5 col-lg-3 footer1">
+            <div class="header-logo col-12">
+                <img src="./assets/imgs/header-logo.png" width="199px">
+            </div>
+            <div class="col-12">
+                <p class="col-12 paragraph2">Efficiently unleash cross-media inform without cross-media value. Quickly data maximize timely into deliverables for real-time schemas functional data solutions.</p>
+            </div>
+            <div class="col-12 footer_icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 fotter_ul">
+            <h2 class="col-12"><span class="col-6 footer_span">About<hr class="col-3 footer_hr"></span></h2>
+            <ul class="col-12 m-0 p-0">
+                <li class="h_cards">About Us</li>
+                <li class="h_cards">Corses</li>
+                <li class="h_cards">Instructors</li>
+                <li class="h_cards">Events</li>
+                <li class="h_cards">Contact</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 fotter_ul">
+            <h2 class="col-12 "><span class="col-6 footer_span">Categories<hr class="col-3 footer_hr"></span></h2>
+            <ul class="col-12 m-0 p-0">
+                <li class="h_cards">UI UX Design</li>
+                <li class="h_cards">Graphic Design</li>
+                <li class="h_cards">Development</li>
+                <li class="h_cards">Motion Design</li>
+                <li class="h_cards">Marketing</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 fotter_ul">
+            <h2 class="col-12"><span class="col-6 footer_span">Resources<hr class="col-3 footer_hr"></span></h2>
+            <ul class="col-12 m-0 p-0">
+                <li class="h_cards">Blog & News</li>
+                <li class="h_cards">Corse Single</li>
+                <li class="h_cards">Leadership</li>
+                <li class="h_cards">Technology</li>
+                <li class="h_cards">Profile</li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-5 col-lg-2 last fotter_ul">
+            <h2 class="col-12 "><span class="col-6 footer_span">Get In Touch<hr class="col-3 footer_hr"></span></h2>
+            <ul class="col-12 m-0 p-0">
+                <li class="h_cards col-12 d-flex  align-items-center m-0 "><i class="fa-solid fa-phone pt-1 px-1"></i> +201120450204</li>
+                <li class="h_cards col-12 d-flex  align-items-center m-0 pt-4"><i class="fa-solid fa-envelope pt-1 px-1"></i>info@yourmail.com</li>
+                <li class="h_cards col-12 d-flex  align-items-center m-0 pt-4"><i class="fa-solid fa-location-dot pt-1 px-1"></i>Sheet, City Name, NY</li>
+            </ul>
+
+            <div class="col-12 ">
+            </div>            
+        </div>
+    </footer>
+
+    <div class="fixed d_none"><i class="fa-solid fa-chevron-up d_none"></i></div>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="assets/libs/bootstrap.bundle.min.js"></script>
+</body>
+</html>
